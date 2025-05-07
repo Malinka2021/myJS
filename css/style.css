@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap');
+
+:root {
+    --primary-color-text: #8e918e;
+    --primary-color-headlines: #D5A2FE;
+    --primary-color-buttons: #a5f8b7;
+    --primary-color-background: #fafafa;
+    --primary-color-line: #edd7fa;
+    --secondary-color-text: #717471;
+    --secondary-color-line: #f3e9f9;  /* Added the missing '--' for the variable */
+}
+
+
+
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid var(--primary-color-text);
+    border-radius: 10px;
+    background-color: var(--primary-color-buttons);
+    margin: 20px;
+}
+.line {          /* Hamburger lines */
+    width: 70%;
+    height: 4px;
+    background-color: var(--primary-color-text);
+    border-radius: 10px;
+}
