@@ -7,10 +7,17 @@
     --primary-color-background: #fafafa;
     --primary-color-line: #edd7fa;
     --secondary-color-text: #717471;
-    --secondary-color-line: #f3e9f9;  /* Added the missing '--' for the variable */
+    --secondary-color-line: #f3e9f9;  
 }
-
-
+* {
+    font-family: "Roboto", sans-serif;
+}
+.menu {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;  /* Changed to 1fr for a single column layout */
+    grid-template-rows: 1fr;
+}
 
 
 .hamburger-menu {
@@ -24,10 +31,47 @@
     border-radius: 10px;
     background-color: var(--primary-color-buttons);
     margin: 20px;
+    justify-self: end;  /* Align to the right end */
 }
 .line {          /* Hamburger lines */
     width: 70%;
     height: 4px;
     background-color: var(--primary-color-text);
     border-radius: 10px;
+}
+.menu-panel {
+    display: none;  /* Initially hidden */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 196px;  /* Adjusted width */
+    height: 373px;  /* Adjusted height */
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--primary-color-buttons);
+    z-index: 10;
+}
+.menu-panel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.menu-panel li {
+    margin: 20px 0;
+}
+.menu-panel a {
+    text-decoration: none;
+    color: var(--primary-color-text);
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+.menu-panel a:hover {
+    color: var(--primary-color-headlines);
 }
