@@ -40,10 +40,11 @@
     border-radius: 10px;
 }
 .menu-panel {
-    display: none;  /* Initially hidden */
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: absolute; /* Positioning the menu panel without particular place */
+    /*right: 0; /* Align to the right, 0px from right */
+    
+    right: -196px; /* Align to the right, -196px panel widthnot visible from right */
+    top: 0;  /* Align to the top, 0px from top */
     width: 196px;  /* Adjusted width */
     height: 373px;  /* Adjusted height */
     font-size: 24px;
@@ -52,6 +53,7 @@
     text-align: center;
     background-color: var(--primary-color-buttons);
     z-index: 10;
+    box-sizing: border-box;
 }
 .menu-panel ul {
     list-style: none;
@@ -74,4 +76,7 @@
 }
 .menu-panel a:hover {
     color: var(--primary-color-headlines);
+}
+.menu-panel.active {
+    right: 0; /* Show the menu when active */
 }
