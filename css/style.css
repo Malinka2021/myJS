@@ -12,6 +12,9 @@
 * {
     font-family: "Roboto", sans-serif;
 }
+body {
+    overflow: hidden; /* Prevent scrolling */
+}
 .menu {
     display: grid;
     width: 100%;
@@ -81,3 +84,16 @@
 .menu-panel.active {
     right: 0; /* Show the menu when active */
 }
+
+.frame{
+    width: 100%;
+    text-align: center;
+}
+.frame img{
+    display: inline-block;
+    width: 288px;
+    height: 139px;
+    object-fit: cover;
+    margin: 20px 0;
+}
+
