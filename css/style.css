@@ -8,7 +8,6 @@
     --primary-color-line: #edd7fa;
     --secondary-color-text: #717471;
     --secondary-color-line: #f3e9f9;  
-}
 * {
     font-family: "Roboto", sans-serif;
 }
@@ -21,8 +20,6 @@ body {
     grid-template-columns: 1fr;  /* Changed to 1fr for a single column layout */
     grid-template-rows: 1fr;
 }
-
-
 .hamburger-menu {
     display: flex;
     flex-direction: column;
@@ -97,3 +94,53 @@ body {
     margin: 20px 0;
 }
 
+.contact-form{
+        display: block;
+        width: 100%;
+        font-size: 24px;
+        font-family: 'Roboto', sans-serif;
+       
+    }
+    .contact-form form{
+        display: block;
+        text-align: start;
+        box-sizing: border-box;
+        padding: 32px;
+       
+    }
+    input, textarea{         /*name, email, message area*/
+        width: 90%;
+        background-color: var(--primary-color-buttons);
+        padding-left: 10px;
+        margin-bottom: 20px;
+    }
+    input{
+        height: 38px;
+    }
+    #contact-me-headline {
+        display: block;
+    }
+    .contact-form button {
+        width: 160px;
+        height: 40px;
+        background-color: #dcdfdc;
+        text-transform: none;
+        margin-left: 0;
+        margin-top: 0;
+        text-align: center;
+        border-radius: 0;
+        border: 1px solid var(--primary-color-text);
+    }
+    .button-wrapper{
+        text-align: center;
+    }
+    .modal{
+        display: none;
+        width: 100%;
+        height: 100%;
+        background-color: var(--primary-color-background);
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 1;        /*layer forward*/
+    }

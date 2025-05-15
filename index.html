@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>My JavaScript</title>
 </head>
+
 <body>
     <div class="container">
         <div class="menu">
@@ -13,17 +15,18 @@
             <div class="hamburger-menu">
                 <div class="line"></div>
                 <div class="line"></div>
-                <div class="line"></div>  <!-- 3lines drawing -->
+                <div class="line"></div> <!-- 3lines drawing -->
             </div>
-            
-            <div class="menu-panel">  <!-- 'active' to create side menu from hamburger visible only when active, but we try js -->
+
+            <div class="menu-panel">
+                <!-- 'active' to create side menu from hamburger visible only when active, but we try js -->
                 <ul>
                     <li><a href="#section1">home</a></li>
                     <li><a href="#section2">my works</a></li>
                     <li><a href="#section3">my clients</a></li>
                     <li><a href="#section4">contact me</a></li>
 
-                </ul>  <!-- Closing the unordered list -->
+                </ul> <!-- Closing the unordered list -->
             </div>
         </div>
 
@@ -35,8 +38,48 @@
             </div>
         </div>
 
+        <hr>
+
+        <div class="button-wrapper">
+             <button id="btn-open-form">Open Form</button>
+        </div>
+
+        <div class="modal">
+            <div class="contact">
+                <div class="contact-form">
+                    <form action="#">
+                        <div class="label">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="label">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-input">
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="label">
+                            <label for="message">Message</label>
+                        </div>
+                        <div class="text-area">
+                            <textarea name="message" id="message" rows="10" required></textarea>
+                        </div>
+                        <div class="btn-form">
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+
+
     </div>
 
     <script src="app.js"></script>
 </body>
+
 </html>
