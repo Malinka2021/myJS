@@ -9,6 +9,8 @@ const images = [
     'images/4.webp',
     'images/5.webp',
     'images/6.jpeg'];
+const modal = document.querySelector('.modal');
+const btnOpenModal =  document.querySelector('#btn-open-form')
 
 let currentImageIndex = 0;
 // Set the initial image
@@ -29,7 +31,7 @@ frameImage.addEventListener('click', () => {
 
 btnHamburger.addEventListener('click', (event) => {
     
-    menuPanel.classList.toggle('active');
+    menuPanel.classList.toggle('active'); // toggle method adds or removes class in active menu panel
     
  }
 );
@@ -46,3 +48,15 @@ menuLinks.forEach(link => {
     });
 }
 );
+
+btnOpenModal.addEventListener('click', () => {
+
+    modal.style.display = 'block';   // in 'css' it's none, after click displayed 
+})
+
+window.onclick = (event) => {
+
+    if(event.target == modal){
+        modal.style.display = 'none';
+    }
+}
