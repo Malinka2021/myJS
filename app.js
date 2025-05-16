@@ -10,7 +10,11 @@ const images = [
     'images/5.webp',
     'images/6.jpeg'];
 const modal = document.querySelector('.modal');
-const btnOpenModal =  document.querySelector('#btn-open-form')
+const btnOpenModal =  document.querySelector('#btn-open-form');
+const inputName = document.querySelector('#name');
+const inputEmail = document.querySelector('#email');
+const inputMessage = document.querySelector('#message');
+const contactForm = document.querySelector('#contact-form');
 
 let currentImageIndex = 0;
 // Set the initial image
