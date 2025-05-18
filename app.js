@@ -64,3 +64,25 @@ window.onclick = (event) => {
         modal.style.display = 'none';
     }
 }
+
+contactForm.addEventListener('submit', (event) => {
+
+    event.preventDefault();   // prevents prerequisite  page update
+    //console.log('form submitted');  // check form reaction (in Console should be 'Form submitted')
+    const name = inputName.value;
+    const email = inputEmail.value;
+    const message = inputMessage.value;  // create memory boxes to keep inserted info to send to Local Storage
+
+    // object literal (allows  store data in key/value format):
+
+    const formData = {
+        userName: name,
+        userEmail: email,
+        userMessage: message  // object attributes
+    }
+
+    localStorage.setItem("name", JSON.stringify(formData.userName));
+    localStorage.setItem("email", JSON.stringify(formData.userEmail));
+    localStorage.setItem("message", JSON.stringify(formData.userMessage));
+}
+);
